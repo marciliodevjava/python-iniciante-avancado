@@ -34,3 +34,6 @@ if pessoa.upper() in pessoas_upper:
     print(f'A {pessoa}, está na lista')
 else:
     print(f'A {pessoa}, não na lista')
+
+pessoa += ' Você não conhece'
+print(pessoa)
