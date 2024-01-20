@@ -20,6 +20,7 @@ class JogadorLoteria():
     def __repr__(self):
         return f'Nome: {self.__nome}, Idade: {self.__idade}'
 
+
 jogador_toleria_um = {
     'nome': 'Alessadra',
     'idade': 27,
