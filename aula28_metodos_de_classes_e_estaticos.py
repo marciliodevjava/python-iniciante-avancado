@@ -1,7 +1,8 @@
 # Métodos de Classes e Métodos Estáticos
+from datetime import datetime
+
 
 class Funcionario():
-
     __aumento = float()
 
     def __init__(self, nome, salario):
@@ -21,6 +22,13 @@ class Funcionario():
         else:
             cls.__aumento = float(valor)
 
+    @staticmethod
+    def dia_util(dia):
+        if dia.weekday() == 5 or dia.weekday() == 6:
+            return False
+        else:
+            return True
+
     def aplicar_aumento(self):
         self.__salario = self.__salario + (self.__salario * self.__aumento)
 
@@ -31,3 +39,5 @@ fabio.aumento(0.30)
 print(fabio)
 fabio.aplicar_aumento()
 print(fabio)
+minha_data = datetime.today().date()
+print(f'é dia de semana {Funcionario.dia_util(minha_data)}')
