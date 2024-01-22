@@ -60,3 +60,4 @@ for jogador in dicionario_jogadores:
     lista_pessoa.append(pessoa)
 
 print(lista_pessoa)
+print(lista_pessoa[0].retorna_nome() == lista_pessoa[1].retorna_nome())
